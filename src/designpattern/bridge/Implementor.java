@@ -4,6 +4,8 @@ package designpattern.bridge;
  * 
  * @author liu yuning
  *
+ * 可以看作是手机软件
+ *
  */
 public abstract class Implementor {
 

@@ -2,7 +2,7 @@ package designpattern.bridge;
 
 /**
  * 客户端
- * 
+ * 我的理解就是实现系统可能有多角度分类，每一种分类都有可能变化，那么就把这种多角度分离出来让它们独立变化，减少它们之间的耦合。
  * @author liu yuning
  *
  */

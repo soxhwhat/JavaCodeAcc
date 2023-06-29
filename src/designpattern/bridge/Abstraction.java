@@ -4,6 +4,8 @@ package designpattern.bridge;
  * 
  * @author liu yuning
  *
+ * 有一个聚合线，哈，像一座桥。
+ * 由于实现的方式有多种，桥接模式的核心意图就是把这些实现独立出来，让它们各自地变化。这就使得每种实现的变化不会影响其他实现，从而达到应对变化的目的。
  */
 public abstract class Abstraction {
     protected Implementor implementor;// 桥接模式的关键，使得Abstraction聚合Implementor
@@ -13,6 +15,10 @@ public abstract class Abstraction {
 	this.setName(name);
     }
 
+    /**
+     * 品牌需要关注软件，所以可在机器中安装软件，以备运行。
+     * @param implementor
+     */
     public void setImplementor(Implementor implementor) {
 	this.implementor = implementor;
     }
@@ -31,6 +37,9 @@ public abstract class Abstraction {
     }
 }
 
+/**
+ * 可以看作是不同的品牌
+ */
 class AbstractionA extends Abstraction {
 
     public AbstractionA(String name) {
