@@ -18,6 +18,10 @@ public class StrategyClient {
 
 	context = new Context(new ConcreteStrategyC());
 	context.contextInterface();
+	// 动态改变策略
+	// 在运行时想改变鸭子的行为，只需调用鸭子的setter方法就可以。
+	context.setStrategy(new ConcreteStrategyA());
+	context.contextInterface();
 
     }
 }

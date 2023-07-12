@@ -10,6 +10,9 @@ public interface Strategy {
     public void algorithmInterface();
 }
 
+/**
+ * 将每组行为想象成一个算法族，分别封装起来，让它们之间可以互相替换。
+ */
 class ConcreteStrategyA implements Strategy {
 
     @Override
